@@ -2,21 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
   /**
-   * Preloader
-   */
-  const preloader = document.querySelector('#preloader');
-  if (preloader) {
-    window.addEventListener('load', () => {
-      setTimeout(() => {
-        preloader.classList.add('loaded');
-      }, 1000);
-      setTimeout(() => {
-        preloader.remove();
-      }, 2000);
-    });
-  }
-
-  /**
    * Mobile nav toggle
    */
   const mobileNavShow = document.querySelector('.mobile-nav-show');
@@ -154,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
    */
   function aos_init() {
     AOS.init({
-      duration: 1000,
+      duration: 300,
       easing: 'ease-in-out',
       once: true,
       mirror: false
