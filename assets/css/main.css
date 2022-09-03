@@ -1283,3 +1283,12 @@ h6 {
 .footer .credits a {
   color: var(--color-primary);
 }
+
+/*
+Thumbnail image on home page
+*/
+.img-home-thumb {
+  max-width: 350px;
+  max-height: 500px;
+  text-align: center;
+}
